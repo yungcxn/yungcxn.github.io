@@ -1,16 +1,14 @@
 [
   {
-    "User-UUID": "a885aa7f-b70d-42c6-80d4-bf33490b26bb",
+    "Username": "yungclicker",
     "Cosmetics-ID": 2,
     "Cape-ID": 3,
-    "Title": "Owner",
-    "Color": 4
+    "Title": "!4Owner",
   },
   {
-    "User-UUID": "e5c6fd30-7560-4e47-9b6c-1606c02f30bf",
+    "Username": "clickerschelle",
     "Cosmetics-ID": 1,
     "Cape-ID": 1,
-    "Title": "Content",
-    "Color": 6
+    "Title": "!6Content",
   }
 ]

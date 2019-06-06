@@ -3,12 +3,14 @@
     "Username": "yungclicker",
     "Cosmetics-ID": 2,
     "Cape-ID": 3,
-    "Title": "'4Owner",
+    "Title": "Owner",
+    "Color": 4
   },
   {
     "Username": "clickerschelle",
     "Cosmetics-ID": 1,
     "Cape-ID": 1,
-    "Title": "'6Content",
+    "Title": "Content",
+    "Color": 6
   }
 ]

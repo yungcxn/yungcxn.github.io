@@ -1,6 +1,9 @@
+console.log("Hello World")
 
-import anime from 'https://cdn.jsdelivr.net/gh/juliangarnier/anime/lib/anime.es.js';
-anime({
-  targets: 'img#megaman',
-  translateX: 100
-});
+window.onload = function() {
+        anime({
+          targets: 'img#megaman',
+          translateX: 300,
+          easing: 'linear'
+        });
+    }

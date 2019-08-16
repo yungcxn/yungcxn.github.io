@@ -1,9 +1,10 @@
-console.log("Hello World")
+
 
 window.onload = function() {
-        anime({
-          targets: 'img#megaman',
-          translateX: 300,
-          easing: 'linear'
-        });
-    }
+  anime({
+    targets: 'img#megaman',
+    translateX: screen.width,
+    easing: 'linear',
+    duration: screen.width * 4
+  });
+}

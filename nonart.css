@@ -4,16 +4,30 @@ body {
   color: #eeeeee;
 }
 
-
-h1 {
-    text-align: center;
+#intro {
+  text-align: center;
 }
 
-p {
-    text-align: center;
+
+#gallery {
+  text-align: center;
 }
 
 img {
   width: 50%;
   height: 50%;
+
+}
+
+
+div#cicada img, div#beginning img, div#chessmate img, div#cosinelamp img,
+div#imagine img, div#killai img, div#naturegame img, div#origin img,
+div#water img, div#ugly img{
+  transform: rotate(90deg);
+}
+
+#outro {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
 }

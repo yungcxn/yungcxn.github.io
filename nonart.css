@@ -2,7 +2,7 @@ body {
   font-family: 'Muli', sans-serif;
   background-color: #111111;
   color: #eeeeee;
-  font-size: 120%;
+  font-size: 140%;
 }
 
 #intro {
@@ -18,13 +18,18 @@ body {
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
 
+img:hover {
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
 }
 
 #gallery > div > p {
-  padding-right: 5px;
+  padding-right: 5%;
 }
 
 a#desc {

@@ -1,8 +1,35 @@
-img#megaman {
 
+
+body {
+  font-family: 'Muli', sans-serif;
+  background-color: #eeeeee;
+  color: #111111;
+  font-size: 100%;
+}
+
+img#megaman {
+  position: absolute;
+  left: -30%;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+ a {
+   text-decoration-line: none;
+   background-color: #cccccc;
+   border-style: solid;
+
+ }
+
+ a:visited {
+   color: #111111;
+ }
+
+a:hover {
+  background-color: #111111;
 }

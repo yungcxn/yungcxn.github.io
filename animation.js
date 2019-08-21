@@ -9,10 +9,10 @@ async function MegaTf() {
     translateX: [
       {
         duration: screenX * 6,
-        value: screenX
+        value: screenX * 1.5
       }
     ]
-  });  
+  });
 }
 
 window.onload = function() {

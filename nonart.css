@@ -19,18 +19,6 @@ img {
 
 }
 
-@supports (transform: rotate(90deg)) {
-  div#cicada img, div#beginning img, div#chessmate img, div#cosinelamp img,
-  div#imagine img, div#killai img, div#naturegame img, div#origin img,
-  div#water img, div#ugly img{
-
-    webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-}
 
 #outro {
   border-style: solid;

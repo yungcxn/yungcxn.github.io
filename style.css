@@ -30,6 +30,12 @@ h2 {
 p {
   text-align: center;
 }
+
+p.code {
+  text-align: left;
+  font-family: 'Fira Sans', sans-serif;
+}
+
  a {
    text-decoration-line: none;
    background-color: #cccccc;

@@ -15,14 +15,15 @@ async function MegaTf() {
   });
 }
 
-window.onload = function() {
+window.addEventListener('load', function(event){
   screenX = window.innerWidth;
   MegaTf();
-}
+});
 
-window.onresize = function() {
+
+window.addEventListener('resize', function(event){
   screenX = window.innerWidth;
-}
+});
 
 /*
 translateX frame.width

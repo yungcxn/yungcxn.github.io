@@ -27,26 +27,95 @@ h2 {
   margin-top: 3px;
 }
 
-p {
-  text-align: center;
+
+
+p.code#java {
 }
 
-p.code {
+p.code#python {
+  display: none;
+}
+
+p.code#brainfuck {
+  display: none;
+}
+
+p.code#mond {
+  display: none;
+}
+
+p.code#c {
+  display: none;
+}
+
+p.code#cr {
+  display: none;
+}
+
+p.code#js {
+  display: none;
+}
+
+p.code#asm {
+  display: none;
+}
+
+div.top {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
+
+}
+
+div.left {
+  margin-left: 15%;
   text-align: left;
-  font-family: 'Fira Sans', sans-serif;
+  padding: 5px 5px 5px 5px;
+  /*background-color: #dddddd;*/
 }
 
- a {
-   text-decoration-line: none;
-   background-color: #cccccc;
-   border-style: solid;
+div.code {
+  margin-left: 15%;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  /*background-color: #dddddd;*/
+}
 
- }
+div.bottom {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 3%;
+}
 
- a:visited {
+div.project {
+  margin-right: 15%;
+  text-align: right;
+  padding: 10px 10px 10px 10px;
+  /*background-color: #dddddd;*/
+}
+
+div.other {
+  margin-right: 15%;
+  text-align: right;
+  padding: 5px 5px 5px 5px;
+  /*background-color: #dddddd;*/
+}
+
+div.project a, div.other a {
+  color: #111111;
+  text-decoration: none;
+}
+
+div.project a:visited, div.other a:visited  {
    color: #111111;
- }
+}
 
-a:hover {
-  background-color: #111111;
+div.project a:hover, div.other a:hover {
+  color: #777777;
+}
+span#desc {
+  font-size: 90%;
+  color: #555555;
 }

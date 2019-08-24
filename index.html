@@ -38,90 +38,97 @@
         i do what i want
         </p>
       </div>
-
-      <div class="right">
-        <p class="code" id="java">
-          package de.cxn.hello; <br>
-          <br>
-          class HelloWorld { <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) { <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!"); <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-          }
-        </p>
-        <p class="code" id="python">
-        print("Hello World!")
-        </p>
-        <p class="code" id="brainfuck">
-          ++++++++++[>+++++++>++++++++++>+++<<<-]>++.>+.+++++++ <br>
-          ..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.
-        </p>
-        <p class="code" id="cpp">
-          #include <iostream.h>
-
-          main()
-          {
-              cout << "Hello World!" << endl;
-              return 0;
-          }
-        </p>
-        <p class="code" id="c">
-          #include&lt;stdio.h&gt; <br>
-          <br>
-          int main() { <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;printf("\nHello world!"); <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
-          }
-        </p>
-        <p class="code" id="cr">
-          puts "Hello World"
-        </p>
-        <p class="code" id="js">
-          console.log("Hello World");
-        </p>
-        <p class="code" id="asm">
-        ;6502 <br>
-        a_cr	= $0d	; carriage <br>
-        bsout	= $ffd2		; c64 <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.code <br>
+      <div class="project">
+        <a href="https://github.com/yungcxn/mond">mond</a> <br>
+        <span id="desc">flexible, OOP programming lanuagage</span>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;ldx #0		; 0 in X <br>
-        printnext: <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;lda text,x	; char of string <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;beq done	; till a=0 <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;jsr bsout	; output char <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;inx		; incr to next char <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;bne printnext	; repeat on 0 overflowing <br>
-        done: <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;rts		; return <br>
+        <a href="https://github.com/yungcxn/pycrypt">pycrypt</a> <br>
+        <span id="desc">crypto-collection tool</span>
         <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.rodata <br>
-        <br>
-        text: <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;.byte	"Hello world!", a_cr, 0 <br>
-        </p>
-
+        <a href="https://github.com/yungcxn/taco-trainee">taco-trainee</a> <br>
+        <span id="desc">Q-learning AI using Nintaco</span>
       </div>
+
     </div>
 
     <div class="bottom">
-        <div class="project">
+        <div class="code">
+          <p class="code" id="java">
+            package de.cxn.hello; <br>
+            <br>
+            class HelloWorld { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) { <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!"); <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }
+          </p>
+          <p class="code" id="python">
+          print("Hello World!")
+          </p>
+          <p class="code" id="brainfuck">
+            ++++++++++[ <br>
+            >+++++++>++++++++++>+++<<<&minus; <br>
+            ] <br>
+            >++. <br>
+            >+. <br>
+            +++++++. <br>
+            . <br>
+            +++. <br>
+            >++. <br>
+            <<+++++++++++++++. <br>
+            >. <br>
+            +++. <br>
+            ------. <br>
+            --------. <br>
+            >+.
+          </p>
+          <p class="code" id="mond">
+            class HelloWorld <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;$main() <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "Hello World!"
+          </p>
+          <p class="code" id="c">
+            #include&lt;stdio.h&gt; <br>
+            <br>
+            int main() { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;printf("\nHello world!"); <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
+            }
+          </p>
+          <p class="code" id="cr">
+            puts "Hello World"
+          </p>
+          <p class="code" id="js">
+            console.log("Hello World");
+          </p>
+          <p class="code" id="asm">
+          a_cr	= $0d <br>
+          bsout	= $ffd2 <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.code <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;ldx #0 <br>
+          printnext: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;lda text,x <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;beq done <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;jsr bsout <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;inx <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;bne printnext <br>
+          done: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;rts <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.rodata <br>
+          <br>
+          text: <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;.byte	"Hello world!", a_cr, 0 <br>
+          </p>
 
         </div>
 
         <div class="other">
-
+          <a href="https://yungcxn.github.io/nonart.html"><s>&nbsp;art&nbsp;</s></a> <br>
+          <span id="desc">a photographic "story" of my ideas</span>
         </div>
     </div>
-
-
-    <p id="art">
-      <b>Enter the void of <s>art</s><b>
-        <br><br>
-      <a href="https://yungcxn.github.io/nonart.html">0x6e6f</a>
-        <br><br>
-      <b>A photographic "story" of my ideas</b>
-    <p>
 
   </body>
 </html>

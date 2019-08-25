@@ -122,10 +122,34 @@ span#desc {
 
 
 @media only screen and (max-width: 1150px) {
+  body {
+    font-size:120%;
+  }
+
   div.top {
     flex-flow: column;
+    justify-content: space-around;
+
   }
   div.bottom {
     flex-flow: column;
+    justify-content: space-around;
+
+  }
+
+  div.code {
+    margin-right:15%;
+  }
+
+  div.project {
+    margin-left:15%;
+  }
+
+  div.left {
+    margin-right:15%;
+  }
+
+  div.other {
+    margin-left:15%;
   }
 }

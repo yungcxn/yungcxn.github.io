@@ -28,9 +28,6 @@ h2 {
   font-family: 'Lexend Peta', sans-serif;
 }
 
-
-
-
 p {
   margin-top: 0px;
 }
@@ -40,6 +37,16 @@ p {
   width: 20px;
   height: 20px;
 }
+
+img.emoji#java{}
+img.emoji#python { display: none; }
+img.emoji#brainfuckbrain { display: none; }
+img.emoji#brainfuckforbid { display: none; }
+img.emoji#mond { display: none; }
+img.emoji#c { display: none; }
+img.emoji#cr { display: none; }
+img.emoji#js { display: none; }
+img.emoji#asm { display: none; }
 
 h3 {
   color: #ababab;
@@ -60,37 +67,14 @@ p.code {
   font-family: 'Hepta Slab', serif;
 }
 
-p.code#java {
-}
-
-
-p.code#python {
-  display: none;
-}
-
-p.code#brainfuck {
-  display: none;
-}
-
-p.code#mond {
-  display: none;
-}
-
-p.code#c {
-  display: none;
-}
-
-p.code#cr {
-  display: none;
-}
-
-p.code#js {
-  display: none;
-}
-
-p.code#asm {
-  display: none;
-}
+p.code#java {}
+p.code#python { display: none; }
+p.code#brainfuck { display: none; }
+p.code#mond { display: none; }
+p.code#c { display: none; }
+p.code#cr { display: none; }
+p.code#js { display: none; }
+p.code#asm { display: none; }
 
 div.top {
   display: flex;

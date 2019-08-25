@@ -25,23 +25,11 @@ h2 {
   font-size: 120%;
   color: #666666;
   margin-top: 3px;
+  font-family: 'Lexend Peta', sans-serif;
 }
 
-/*
-div.themes {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
 
-div.themes > div {
-  width: 50px;
-      height: 50px;
-      background: grey;
-      border-radius: 50%
-}
-*/
+
 
 p {
   margin-top: 0px;
@@ -49,13 +37,15 @@ p {
 
 .emoji {
   vertical-align: bottom;
-  width:20px;
+  width: 20px;
   height: 20px;
 }
 
 h3 {
   color: #ababab;
   margin-bottom: 0px;
+  font-family: 'Roboto Mono', monospace;
+
 }
 
 h3>img.emoji{
@@ -64,11 +54,15 @@ h3>img.emoji{
   margin-bottom: 10px;
   opacity: 0.5;
   filter: alpha(opacity=50);
+}
 
+p.code {
+  font-family: 'Hepta Slab', serif;
 }
 
 p.code#java {
 }
+
 
 p.code#python {
   display: none;
@@ -107,7 +101,7 @@ div.top {
 }
 
 div.left {
-  margin-left: 15%;
+  margin-left: 10%;
   text-align: left;
   padding: 5px 5px 5px 5px;
   /*background-color: #dddddd;*/
@@ -115,7 +109,7 @@ div.left {
 
 
 div.code {
-  margin-left: 15%;
+  margin-left: 10%;
   text-align: left;
   padding: 10px 10px 10px 10px;
   /*background-color: #dddddd;*/
@@ -126,17 +120,18 @@ div.bottom {
   flex-flow: row;
   justify-content: space-between;
   margin-top: 3%;
+
 }
 
 div.project {
-  margin-right: 15%;
+  margin-right: 10%;
   text-align: right;
   padding: 10px 10px 10px 10px;
   /*background-color: #dddddd;*/
 }
 
 div.other {
-  margin-right: 15%;
+  margin-right: 10%;
   text-align: right;
   padding: 5px 5px 5px 5px;
   /*background-color: #dddddd;*/
@@ -158,6 +153,54 @@ span#desc {
   font-size: 90%;
   color: #555555;
 }
+
+p.code#java span#keyword {color:#b1b1b1;}
+p.code#java span#separator {color:#666666;}
+p.code#java span#literal {color:#888888;}
+p.code#java span#identifier {color:#333333;}
+p.code#java span#operator {color:#aaaaaa;}
+
+p.code#python span#keyword {color:#FF0000;}
+p.code#python span#separator {color:#FF0000;}
+p.code#python span#literal {color:#FF0000;}
+p.code#python span#identifier {color:#FF0000;}
+p.code#python span#operator {color:#FF0000;}
+
+p.code#brainfuck span#keyword {color:#FF0000;}
+p.code#brainfuck span#separator {color:#FF0000;}
+p.code#brainfuck span#literal {color:#FF0000;}
+p.code#brainfuck span#identifier {color:#FF0000;}
+p.code#brainfuck span#operator {color:#FF0000;}
+
+p.code#mond span#keyword {color:#FF0000;}
+p.code#mond span#separator {color:#FF0000;}
+p.code#mond span#literal {color:#FF0000;}
+p.code#mond span#identifier {color:#FF0000;}
+p.code#mond span#operator {color:#FF0000;}
+
+p.code#c span#keyword {color:#FF0000;}
+p.code#c span#separator {color:#FF0000;}
+p.code#c span#literal {color:#FF0000;}
+p.code#c span#identifier {color:#FF0000;}
+p.code#c span#operator {color:#FF0000;}
+
+p.code#cr span#keyword {color:#FF0000;}
+p.code#cr span#separator {color:#FF0000;}
+p.code#cr span#literal {color:#FF0000;}
+p.code#cr span#identifier {color:#FF0000;}
+p.code#cr span#operator {color:#FF0000;}
+
+p.code#js span#keyword {color:#FF0000;}
+p.code#js span#separator {color:#FF0000;}
+p.code#js span#literal {color:#FF0000;}
+p.code#js span#identifier {color:#FF0000;}
+p.code#js span#operator {color:#FF0000;}
+
+p.code#asm span#keyword {color:#FF0000;}
+p.code#asm span#separator {color:#FF0000;}
+p.code#asm span#literal {color:#FF0000;}
+p.code#asm span#identifier {color:#FF0000;}
+p.code#asm span#operator {color:#FF0000;}
 
 
 

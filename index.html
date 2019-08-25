@@ -13,22 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
 
   </head>
 
   <body>
-    <div class="themes">
-      <div class="java"></div>
-      <div class="python"></div>
-      <div class="brainfuck"></div>
-      <div class="mond"></div>
-      <br>
-      <div class="c"></div>
-      <div class="cr"></div>
-      <div class="js"></div>
-      <div class="asm"></div>
-    </div>
+
     <img src="img/megaman.gif" width="120px" height="120px" id="megaman">
     <h1>"Can"</h1>
     <h2>
@@ -68,53 +61,62 @@
         <div class="code">
           <h3><img src="img/coffee.png" class="emoji"></h3>
           <p class="code" id="java">
-            package de.cxn.hello; <br>
+            <span id="keyword">package</span> <span id="identifier">de<span id="separator">.</span><span id="identifier">cxn</span><span id="separator">.</span><span id="identifier">hello</span><span id="separator">;</span> <br>
             <br>
-            class HelloWorld { <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) { <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!"); <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-            }
+            <span id="keyword">class</span> <span id="identifier">HelloWorld</span> <span id="separator">{</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span id="keyword">public static void</span> <span id="identifier">main</span><span id="separator">(</span><span id="identifier">String</span><span id="separator">[]</span> <span id="identifier">args</span>
+              <span id="separator">) {</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span id="identifier">System</span><span id="separator">.</span><span id="identifier">out</span><span id="separator">.</span><span id="identifier">println</span><span id="separator">(</span><span id="literal">"Hello World!"</span><span id="separator">);</span> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span id="separator">}</span><br>
+            <span id="separator">}</span>
           </p>
+          <h3><img src="img/snake.png" class="emoji"></h3>
           <p class="code" id="python">
-          print("Hello World!")
+            <span id="identifier">print</span><span id="operator">(</span><span id="literal">"Hello World!"</span><span id="operator">)</span>
           </p>
+          <h3><img src="img/brain.png" class="emoji"><img src="img/forbid.png" class="emoji"></h3>
           <p class="code" id="brainfuck">
             ++++++++++[ <br>
             >+++++++>++++++++++>+++<<<&minus; <br>
             ] <br>
-            >++. <br>
-            >+. <br>
+            >++.
+            >+.
             +++++++. <br>
-            . <br>
-            +++. <br>
+            .
+            +++.
             >++. <br>
             <<+++++++++++++++. <br>
-            >. <br>
-            +++. <br>
+            >.
+            +++.
             ------. <br>
-            --------. <br>
+            --------.
             >+.
           </p>
+          <h3><img src="img/moon.png" class="emoji"></h3>
           <p class="code" id="mond">
-            class HelloWorld <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;$main() <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "Hello World!"
+            <span id="keyword">class</span> <span id="identifier">HelloWorld</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="operator">$</span><span id="keyword">main</span><span id="operator">()</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="keyword">print</span> <span id="literal">"Hello World!"</span>
           </p>
+          <h3><img src="img/disc.png" class="emoji"></h3>
           <p class="code" id="c">
-            #include&lt;stdio.h&gt; <br>
+            <span id="identifier">#include</span><span id="operator">&lt;</span><span id="identifier">stdio.h</span><span id="operator">&gt;</span> <br>
             <br>
-            int main() { <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;printf("\nHello world!"); <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
+            <span id="keyword">int</span> <span id="identifier">main</span><span id="separator">() {</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="identifier">printf</span><span id="operator">(</span><span id="literal">"\nHello world!"</span><span id="separator">);</span> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="keyword">return</span> <span id="literal">0</span><span id="separator">;</span> <br>
             }
           </p>
+          <h3><img src="img/diamond.png" class="emoji"></h3>
           <p class="code" id="cr">
-            puts "Hello World"
+            <span id="identifier">puts</span> <span id="literal">"Hello World"</span>
           </p>
+          <h3><img src="img/brush.png" class="emoji"></h3>
           <p class="code" id="js">
-            console.log("Hello World");
+            <span id="identifier">document</span><span id="separator">.</span><span id="identifier">write</span><span id="separator">(</span><span id="literal">"Hello World!"</span><span id="separator">);</span>
           </p>
+          <h3><img src="img/floppy.png" class="emoji"></h3>
           <p class="code" id="asm">
           a_cr	= $0d <br>
           bsout	= $ffd2 <br>
@@ -144,7 +146,7 @@
           <span id="desc">a photographic "story" of my ideas</span></p>
         </div>
     </div>
-
+    <br>
 
 
   </body>

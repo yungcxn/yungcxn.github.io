@@ -27,7 +27,45 @@ h2 {
   margin-top: 3px;
 }
 
+/*
+div.themes {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
 
+div.themes > div {
+  width: 50px;
+      height: 50px;
+      background: grey;
+      border-radius: 50%
+}
+*/
+
+p {
+  margin-top: 0px;
+}
+
+.emoji {
+  vertical-align: bottom;
+  width:20px;
+  height: 20px;
+}
+
+h3 {
+  color: #ababab;
+  margin-bottom: 0px;
+}
+
+h3>img.emoji{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+
+}
 
 p.code#java {
 }
@@ -75,6 +113,7 @@ div.left {
   /*background-color: #dddddd;*/
 }
 
+
 div.code {
   margin-left: 15%;
   text-align: left;
@@ -119,6 +158,7 @@ span#desc {
   font-size: 90%;
   color: #555555;
 }
+
 
 
 @media only screen and (max-width: 1150px) {

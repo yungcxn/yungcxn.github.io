@@ -7,7 +7,7 @@ body {
   font-family: 'Muli', sans-serif;
   background-color: #eeeeee;
   color: #111111;
-  font-size: 100%;
+  font-size: 140%;
 }
 
 img#megaman {
@@ -118,4 +118,14 @@ div.project a:hover, div.other a:hover {
 span#desc {
   font-size: 90%;
   color: #555555;
+}
+
+
+@media only screen and (max-width: 1150px) {
+  div.top {
+    flex-flow: column;
+  }
+  div.bottom {
+    flex-flow: column;
+  }
 }

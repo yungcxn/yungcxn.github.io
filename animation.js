@@ -1,28 +1,28 @@
-var screenX;
+var animation;
 
-async function MegaTf() {
-
-  anime({
-    loop: true,
-    targets: 'img#megaman',
-    easing: 'linear',
-    translateX: [
-      {
-        duration: screenX * 6,
-        value: screenX * 1.5
-      }
-    ]
-  });
+function MegaTf() {
+  animation = anime({
+   loop: true,
+   targets: 'img#megaman',
+   easing: 'linear',
+   duration: window.innerWidth * 6,
+   translateX: [0,window.innerWidth * 1.5]
+ });
 }
 
-window.addEventListener('load', function(event){
-  screenX = window.innerWidth;
-  MegaTf();
-});
+window.addEventListener('load', MegaTf);
 
 
 window.addEventListener('resize', function(event){
-  screenX = window.innerWidth;
+  animation.pause();
+  animation = anime({
+   loop: true,
+   targets: 'img#megaman',
+   easing: 'linear',
+   duration: window.innerWidth * 6,
+   translateX: [0,window.innerWidth * 1.5]
+ });
+  animation.play();
 });
 
 /*

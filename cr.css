@@ -1,0 +1,5 @@
+img.emoji#java{ display: none}
+img.emoji#cr { display: flex; }
+
+p.code#java { display: none; }
+p.code#cr { display: flex; }

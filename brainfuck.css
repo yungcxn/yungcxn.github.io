@@ -1,0 +1,10 @@
+img.emoji#java{ display: none}
+img.emoji#brainfuckbrain { display: flex; }
+img.emoji#brainfuckforbid { display: flex; }
+
+p.code#java { display: none; }
+p.code#brainfuck { display: flex; }
+h3#brainfuck {
+  display: flex;
+  flex-flow: row;
+}

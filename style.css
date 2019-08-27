@@ -10,9 +10,12 @@ body {
   font-size: 140%;
 }
 
-img#megaman {
+img#gif {
   position: absolute;
   left: -30%;
+
+  z-index: -1;
+
 }
 
 h1 {
@@ -76,6 +79,7 @@ p.code#cr { display: none; }
 p.code#js { display: none; }
 p.code#asm { display: none; }
 
+
 div.top {
   display: flex;
   flex-flow: row;
@@ -138,13 +142,13 @@ span#desc {
   color: #555555;
 }
 
-p.code#java span#keyword {color:#b1b1b1;}
-p.code#java span#separator {color:#666666;}
-p.code#java span#literal {color:#888888;}
-p.code#java span#identifier {color:#333333;}
-p.code#java span#operator {color:#aaaaaa;}
-
-p.code#python span#keyword {color:#FF0000;}
+span#keyword {color:#b1b1b1;}
+span#separator {color:#666666;}
+span#literal {color:#888888;}
+span#identifier {color:#333333;}
+span#operator {color:#aaaaaa;}
+/*
+p.code#python span#keyword {color:#FFFFFF;}
 p.code#python span#separator {color:#FF0000;}
 p.code#python span#literal {color:#FF0000;}
 p.code#python span#identifier {color:#FF0000;}
@@ -185,7 +189,7 @@ p.code#asm span#separator {color:#FF0000;}
 p.code#asm span#literal {color:#FF0000;}
 p.code#asm span#identifier {color:#FF0000;}
 p.code#asm span#operator {color:#FF0000;}
-
+*/
 
 
 @media only screen and (max-width: 1150px) {

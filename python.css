@@ -1,0 +1,48 @@
+img.emoji#java{ display: none}
+img.emoji#python { display: flex; }
+
+p.code#java { display: none; }
+p.code#python { display: flex; }
+
+body {
+  background-color: #000000;
+}
+
+
+
+h1 {
+  color: #dddddd;
+
+}
+
+h3 {
+  color: #444444;
+
+}
+
+div.left p {
+  color: #dddddd;
+}
+
+div.project a, div.other a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+div.project a:visited, div.other a:visited  {
+   color: #dddddd;
+}
+
+div.project a:hover, div.other a:hover {
+  color: #888888;
+}
+span#desc {
+  font-size: 90%;
+  color: #aaaaaa;
+}
+
+span#keyword {color:#b1b1b1;}
+span#separator {color:#888888;}
+span#literal {color:#999999;}
+span#identifier {color:#555555;}
+span#operator {color:#bbbbbb;}

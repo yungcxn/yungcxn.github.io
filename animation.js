@@ -10,7 +10,7 @@ function manipulate(theme) {
   link.type = 'text/css';
 
   if(theme === "java") {
-    //do nothing
+    link.href = 'java.css';
   }
   else if(theme === "python") {
     replaceGif("img/python.gif");
@@ -66,6 +66,9 @@ function MegaTf() {
 window.onload = function() {
   var themes = ["java", "python", "brainfuck", "mond", "c", "cr", "js", "asm"];
   var chosen = themes[getRandomInt(themes.length)];
+
+  /*debug*/
+  /*chosen="java"*/
 
   manipulate(chosen);
   MegaTf();

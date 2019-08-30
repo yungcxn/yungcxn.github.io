@@ -84,7 +84,7 @@ div.top {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  margin-bottom: 5%;
+  margin-bottom: 0px;
 
 }
 
@@ -101,13 +101,40 @@ div.code {
   text-align: left;
   padding: 10px 10px 10px 10px;
   /*background-color: #dddddd;*/
+  margin-top: 0px;
+}
+
+
+div.change {
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+img#change {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+p#change{
+  margin-top: 0px;
+  text-align: center;
+  font-size: 80%;
+  margin-bottom: 0px;
+}
+
+a#change {
+  padding: 0px 0px 0px 0px;
 }
 
 div.bottom {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  margin-top: 3%;
+  margin-top: 0px;
 
 }
 
@@ -116,6 +143,8 @@ div.project {
   text-align: right;
   padding: 10px 10px 10px 10px;
   /*background-color: #dddddd;*/
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 div.other {

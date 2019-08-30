@@ -20,6 +20,10 @@ h3 {
 
 }
 
+h3 img.emoji {
+  margin-bottom: 10px;
+}
+
 div.left p {
   color: #dddddd;
 }

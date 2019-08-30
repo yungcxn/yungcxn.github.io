@@ -1,4 +1,7 @@
 html, body {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -61,9 +64,9 @@ h3 {
 h3>img.emoji{
   width: 40px;
   height: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   opacity: 0.5;
-  filter: alpha(opacity=50);
+  filter: alpha(opacity=50);vertical-align: bottom;
 }
 
 p.code {
@@ -84,7 +87,7 @@ div.top {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 
 }
 
@@ -99,15 +102,27 @@ div.left {
 div.code {
   margin-left: 10%;
   text-align: left;
-  padding: 10px 10px 10px 10px;
+  padding: 15px 10px 10px 10px;
   /*background-color: #dddddd;*/
   margin-top: 0px;
+
 }
 
+div.banner {
+  background-color: #171717;
+  padding: 0px 0px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #888888;
+
+}
 
 div.change {
 margin-top: 0px;
 margin-bottom: 0px;
+margin-left: auto;
+margin-right: auto;
+width: 200px;
 }
 
 img#change {
@@ -120,14 +135,20 @@ img#change {
 }
 
 p#change{
-  margin-top: 0px;
+  margin-top: 40px;
   text-align: center;
-  font-size: 80%;
+  font-size: 100%;
   margin-bottom: 0px;
+  font-family: 'Gayathri', sans-serif;
+  color: #ababab;
 }
 
 a#change {
   padding: 0px 0px 0px 0px;
+  width: 170px;
+  height: 170px;
+  display: block;
+  border-radius: 50%;
 }
 
 div.bottom {

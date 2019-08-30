@@ -1,4 +1,6 @@
-
+h3 img.emoji {
+  margin-bottom: 10px;
+}
 
 img.emoji#java{ display: none}
 img.emoji#js { display: flex; }

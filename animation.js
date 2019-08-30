@@ -1,4 +1,9 @@
+
 var animation;
+var themes;
+var chosen;
+var themeNow;
+
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -6,8 +11,11 @@ function getRandomInt(max) {
 function manipulate(theme) {
   var link = document.createElement('link');
 
+  themeNow = theme;
+
   link.rel = 'stylesheet';
   link.type = 'text/css';
+  link.id="custom";
 
   if(theme === "java") {
     link.href = 'java.css';
@@ -45,6 +53,21 @@ function manipulate(theme) {
   document.getElementsByTagName('HEAD')[0].appendChild(link);
 }
 
+function remanipulate() {
+
+  try {
+    var somelink = document.querySelector("link#custom");
+    somelink.parentNode.removeChild(somelink);
+  }catch(e) {
+    alert("Hallo");
+  }
+    var somechosen = themes[getRandomInt(themes.length)];
+    manipulate(somechosen);
+
+
+
+}
+
 
 function replaceGif(path) {
   var imgReplace = document.getElementById("gif");
@@ -64,15 +87,15 @@ function MegaTf() {
 }
 
 window.onload = function() {
-  var themes = ["java", "python", "brainfuck", "mond", "c", "cr", "js", "asm"];
-  var chosen = themes[getRandomInt(themes.length)];
+  themes = ["java", "python", "brainfuck", "mond", "c", "cr", "js", "asm"];
+  chosen = themes[getRandomInt(themes.length)];
 
   /*debug*/
   /*chosen="java"*/
 
   manipulate(chosen);
   MegaTf();
-}
+};
 
 
 window.addEventListener('resize', function(event){

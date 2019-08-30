@@ -12,12 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="lib/animejs/lib/anime.min.js"></script>
-
-
     <script type="text/javascript" src="animation.js"></script>
 
   </head>
@@ -58,11 +57,14 @@
       </div>
     </div>
 
-
-    <div class="change">
-      <a href="#" id="change"><img id="change" src="img/jsaltsmall.gif"></a>
-      <p id="change">personality</p>
+    <div class="banner">
+      <div class="change">
+        <a href="#" onclick="remanipulate()" id="change"><img id="change" src="img/jsaltsmall.gif"></a>
+        <p id="change">personality</p>
+      </div>
     </div>
+
+
 
     <div class="bottom">
         <div class="code">
@@ -125,24 +127,16 @@
           </p>
           <h3><img src="img/floppy.png" class="emoji" id="asm"></h3>
           <p class="code" id="asm">
-          a_cr	= $0d <br>
-          bsout	= $ffd2 <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;.code <br>
-          <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;ldx #0 <br>
-          printnext: <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;lda text,x <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;beq done <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;jsr bsout <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;inx <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;bne printnext <br>
-          done: <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;rts <br>
-          <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;.rodata <br>
-          <br>
-          text: <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;.byte	"Hello world!", a_cr, 0 <br>
+          org 100h <br>
+          start:<br>
+          &nbsp;&nbsp;mov dx,hello_world<br>
+          &nbsp;&nbsp;mov ah,09h<br>
+          &nbsp;&nbsp;int 21h<br>
+          &nbsp;&nbsp;mov al, 0<br>
+          &nbsp;&nbsp;mov ah,4Ch<br>
+          &nbsp;&nbsp;int 21h<br>
+          section .data<br>
+          &nbsp;&nbsp;hello_world: db 'hello, world', 13, 10, '$'<br>
           </p>
 
         </div>

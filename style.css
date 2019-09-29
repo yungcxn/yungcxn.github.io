@@ -2,8 +2,8 @@ html, body {
   margin: 0px;
   padding: 0px;
   margin-top: 5px;
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -108,6 +108,8 @@ div.code {
 
 }
 
+
+
 div.banner {
   background-color: #171717;
   padding: 0px 0px;
@@ -124,6 +126,7 @@ margin-left: auto;
 margin-right: auto;
 width: 200px;
 }
+
 
 img#change {
   width: 200px;

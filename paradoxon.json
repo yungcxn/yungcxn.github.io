@@ -1,16 +1,51 @@
 [
   {
-    "Username": "yungclicker",
+    "Username": "cxn_messer",
     "Cosmetics-ID": 2,
     "Cape-ID": 3,
-    "Title": "Owner",
+    "Title": "God",
     "Color": 4
   },
   {
-    "Username": "clickerschelle",
+    "Username": "fxnn_messer",
     "Cosmetics-ID": 1,
     "Cape-ID": 1,
     "Title": "Content",
     "Color": 6
+  },
+  {
+    "Username": "SendInGeschlecht",
+    "Cosmetics-ID": 1,
+    "Cape-ID": 1,
+    "Title": "Der Beste in MC",
+    "Color": 0
+  },
+  {
+    "Username": "Hoebert",
+    "Cosmetics-ID": 1,
+    "Cape-ID": 1,
+    "Title": "68",
+    "Color": 2
+  },
+  {
+    "Username": "croqxvin",
+    "Cosmetics-ID": 1,
+    "Cape-ID": 1,
+    "Title": "vin vin vin",
+    "Color": 5
+  },
+  {
+    "Username": "messer_chef",
+    "Cosmetics-ID": 1,
+    "Cape-ID": 1,
+    "Title": "Chef",
+    "Color": 1
+  },
+  {
+    "Username": "naqatu",
+    "Cosmetics-ID": 1,
+    "Cape-ID": 1,
+    "Title": "mad?",
+    "Color": 8
   }
 ]
